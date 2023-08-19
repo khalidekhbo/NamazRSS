@@ -1,6 +1,6 @@
 # SalahRSS - Prayer Times using ChatGPT 3.5
-#[![Update RSS Feed](https://github.com/khalidekhbo/SalahRSS/actions/workflows/update-rss.yml/badge.svg)](https://github.com/khalidekhbo/SalahRSS/actions/workflows/update-rss.yml)
-#<br>
+[![Update RSS Feed](https://github.com/khalidekhbo/SalahRSS/actions/workflows/update-rss.yml/badge.svg)](https://github.com/khalidekhbo/SalahRSS/actions/workflows/update-rss.yml)
+<br>
 SalahRSS is a project that utilizes the ChatGPT 3.5 model to provide accurate prayer times (Salah) for Muslims. It fetches data from the Adhaan API and allows you to customize the city and calculation method for prayer time calculations.
 
 ## Features
