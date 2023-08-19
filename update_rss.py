@@ -38,17 +38,17 @@ def generate_rss_feed(prayer_timings):
 
     return tostring(rss)
 
-while True:
-    prayer_times = fetch_prayer_times()
-    rss_feed = generate_rss_feed(prayer_times)
+
+prayer_times = fetch_prayer_times()
+rss_feed = generate_rss_feed(prayer_times)
     #Convert the bytes content to a file
-    rss_feed_str = rss_feed.decode("utf-8")
+rss_feed_str = rss_feed.decode("utf-8")
     
     # Print or save the updated RSS feed
     print(rss_feed)
     # File Export - the updated RSS feed
-    with open("rss_feed.xml","w") as rss_file:
-        rss_file.write(rss_feed_str)
+with open("rss_feed.xml","w") as rss_file:
+   rss_file.write(rss_feed_str)
     
 
     # Wait for a certain interval before updating again (e.g., 24 hours)
