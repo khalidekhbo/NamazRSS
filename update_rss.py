@@ -20,6 +20,11 @@ def fetch_prayer_times():
 
     return timings
 
+def convert_to_12_hour_format(time_24_hour):
+    time_struct = time.strptime(time_24_hour, "%H:%M")
+    time_12_hour = time.strftime("%I:%M %p", time_struct)
+    return time_12_hour
+
 def generate_rss_feed(prayer_timings, last_update_time):
     rss = Element("rss", version="2.0")
     channel = SubElement(rss, "channel")
@@ -28,7 +33,14 @@ def generate_rss_feed(prayer_timings, last_update_time):
     title.text = "Namaz Time"
 
     description = SubElement(channel, "description")
-    description.text = f"Stay updated with daily Namaz timings. Last updated at {last_update_time} (BDT)."
+    description.text = f"Stay updated with daily Namaz timings. Last updated at {last_update_time} (Bangladesh Time)."
+
+    # Add the last update time as the top item
+    top_item = SubElement(channel, "item")
+    top_title = SubElement(top_item, "title")
+    top_title.text = "Last Update Time"
+    top_description = SubElement(top_item, "description")
+    top_description.text = f"Time: {last_update_time} (BDT)"
 
     for prayer, time in prayer_timings.items():
         item = SubElement(channel, "item")
@@ -36,7 +48,7 @@ def generate_rss_feed(prayer_timings, last_update_time):
         title.text = prayer
 
         description = SubElement(item, "description")
-        description.text = f"Time: {time}"
+        description.text = f"Time: {convert_to_12_hour_format(time)}"
 
     return tostring(rss)
 
@@ -49,7 +61,7 @@ else:
 
 # Fetch prayer times
 prayer_times = fetch_prayer_times()
-current_time_bd = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time() + 6 * 3600))  # Adding 6 hours for BDT
+current_time_bd = time.strftime("%Y-%m-%d %I:%M:%S %p", time.localtime(time.time() + 6 * 3600))  # Adding 6 hours for BDT
 rss_feed = generate_rss_feed(prayer_times, current_time_bd)
 
 # Convert the bytes content to a file
