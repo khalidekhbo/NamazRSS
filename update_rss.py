@@ -16,7 +16,7 @@ def fetch_prayer_times():
     data = response.json()
     timings = data["data"]["timings"]
 
- return timings
+    return timings
 
 def generate_rss_feed(prayer_timings):
     rss = Element("rss", version="2.0")
