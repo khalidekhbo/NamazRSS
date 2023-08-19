@@ -44,12 +44,20 @@ prayer_times = fetch_prayer_times()
 rss_feed = generate_rss_feed(prayer_times)
     #Convert the bytes content to a file
 rss_feed_str = rss_feed.decode("utf-8")
-    
+
+# Check if the rss_feed.xml file exists
+if os.path.exists("rss_feed.xml"):
+    # Clear the old content and write new data
+    with open("rss_feed.xml", "w") as rss_file:
+        rss_file.write(rss_feed_str)
+else:
+    # Create a new file and write data
+    with open("rss_feed.xml", "w") as rss_file:
+        rss_file.write(rss_feed_str)
     # Print or save the updated RSS feed
    # print(rss_feed)
     # File Export - the updated RSS feed
-with open("rss_feed.xml","w") as rss_file:
-   rss_file.write(rss_feed_str)
+
 
 subprocess.run(["git","add","rss_feed.xml"])
 
