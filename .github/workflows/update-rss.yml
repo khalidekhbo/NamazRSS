@@ -2,7 +2,7 @@ name: Update RSS Feed
 
 on:
   schedule:
-    - cron: "0 0 * * *" # Run every day at midnight
+    - cron: "* * * * *" # Run every day at midnight
 
 jobs:
   update-rss:
