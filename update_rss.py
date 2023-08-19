@@ -45,7 +45,7 @@ rss_feed = generate_rss_feed(prayer_times)
 rss_feed_str = rss_feed.decode("utf-8")
     
     # Print or save the updated RSS feed
-    print(rss_feed)
+   # print(rss_feed)
     # File Export - the updated RSS feed
 with open("rss_feed.xml","w") as rss_file:
    rss_file.write(rss_feed_str)
