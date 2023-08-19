@@ -49,7 +49,11 @@ rss_feed_str = rss_feed.decode("utf-8")
     # File Export - the updated RSS feed
 with open("rss_feed.xml","w") as rss_file:
    rss_file.write(rss_feed_str)
-    
+
+subprocess.run(["git","add","rss_feed.xml"])
+
+subprocess.run(["git","commit","-m","Update RSS Feed"])
+print("RSS feed updated and committed successfully")
 
     # Wait for a certain interval before updating again (e.g., 24 hours)
     #time.sleep(24 * 60 * 60)
