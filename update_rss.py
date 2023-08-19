@@ -1,8 +1,8 @@
-import os
 import requests
 import time
 import subprocess
 from xml.etree.ElementTree import Element, SubElement, tostring
+import os
 
 def fetch_prayer_times():
     api_url = "http://api.aladhan.com/v1/timingsByCity"
@@ -40,31 +40,23 @@ def generate_rss_feed(prayer_timings):
 
     return tostring(rss)
 
+# Check if the rss_feed.xml file exists and delete it if it does
+if os.path.exists("rss_feed.xml"):
+    os.remove("rss_feed.xml")
 
+# Fetch prayer times
 prayer_times = fetch_prayer_times()
 rss_feed = generate_rss_feed(prayer_times)
-    #Convert the bytes content to a file
+
+# Convert the bytes content to a file
 rss_feed_str = rss_feed.decode("utf-8")
 
-# Check if the rss_feed.xml file exists
-if os.path.exists("rss_feed.xml"):
-    # Clear the old content and write new data
-    with open("rss_feed.xml", "w") as rss_file:
-        rss_file.write(rss_feed_str)
-else:
-    # Create a new file and write data
-    with open("rss_feed.xml", "w") as rss_file:
-        rss_file.write(rss_feed_str)
-    # Print or save the updated RSS feed
-   # print(rss_feed)
-    # File Export - the updated RSS feed
+# Write the updated RSS feed to a new file
+with open("rss_feed.xml", "w") as rss_file:
+    rss_file.write(rss_feed_str)
 
+# Add the new file and commit the changes
+subprocess.run(["git", "add", "rss_feed.xml"])
+subprocess.run(["git", "commit", "-m", "Update RSS Feed"])
 
-subprocess.run(["git","add","rss_feed.xml"])
-
-subprocess.run(["git","commit","-m","Update RSS Feed"])
 print("RSS feed updated and committed successfully")
-
-    # Wait for a certain interval before updating again (e.g., 24 hours)
-    #time.sleep(24 * 60 * 60)
-   
