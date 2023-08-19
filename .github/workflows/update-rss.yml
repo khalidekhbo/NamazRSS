@@ -1,8 +1,6 @@
 name: Update RSS Feed
 
 on:
-release:
- 
   push:
     branches: 
       - main
