@@ -1,5 +1,6 @@
 import requests
 import time
+import subprocess
 from xml.etree.ElementTree import Element, SubElement, tostring
 
 def fetch_prayer_times():
