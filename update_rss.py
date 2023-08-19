@@ -47,16 +47,4 @@ while True:
 
     # Wait for a certain interval before updating again (e.g., 24 hours)
     time.sleep(24 * 60 * 60)
-    description.text = f"Time: {time}"
-
-    return tostring(rss)
-
-while True:
-    prayer_times = fetch_prayer_times()
-    rss_feed = generate_rss_feed(prayer_times)
-
-    # Print or save the updated RSS feed
-    print(rss_feed)
-
-    # Wait for a certain interval before updating again (e.g., 24 hours)
-    time.sleep(24 * 60 * 60)
+   
