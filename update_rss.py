@@ -44,6 +44,10 @@ while True:
 
     # Print or save the updated RSS feed
     print(rss_feed)
+    # File Export - the updated RSS feed
+    with open("rss_feed.xml","w") as rss_file:
+	rss_file.write(rss_feed)
+    
 
     # Wait for a certain interval before updating again (e.g., 24 hours)
     time.sleep(24 * 60 * 60)
