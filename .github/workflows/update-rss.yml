@@ -5,7 +5,7 @@ on:
     branches: 
       - main
   schedule:
-    - cron: "*/5 * * * *" # Run every day at midnight
+    - cron: "*/10 * * * *" # Run every day at midnight
 
 jobs:
   update-rss:
