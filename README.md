@@ -9,13 +9,13 @@ NamazRSS is a simple project that utilizes the ChatGPT 3.5 model to provide accu
 
 - Accurate prayer times using the Aladhan API
 - Customizable city and calculation method
-- Simple and user-friendly interface
+
 
 ## Getting Started
 
 Follow these steps to set up and customize the NamazRSS project for your use:
 
-1. Fork the repository:
+1. Fork the repository
 2. Setup Action
 3. Go Through The PY codes, Change location and times
 4. Get the RAW link of rss_feed.xml
