@@ -27,15 +27,23 @@ jobs:
 
     - name: Delete rss_feed.xml
       run: python delete_rss_feed.py
-
+    - name: Stage Change
+      run: |    
+          git add old_rss_feed.xml
     - name: Generate rss_feed.xml
       run: python update_rss.py
     
-    - name: Push Changes
+    - name: Config Git
       run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+    - name: Stage Change
+      run: |    
           git add rss_feed.xml
-          git commit -m "Update RSS Feed"
+          
+    - name: Commit Change
+      run: git commit -m "Update RSS Feed"
+    - name: Push
+      run: |  
           git push
    
