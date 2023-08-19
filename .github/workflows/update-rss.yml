@@ -2,7 +2,7 @@ name: Update RSS Feed
 
 on:
 release:
-    types: [published]
+ 
   push:
     branches: 
       - main
