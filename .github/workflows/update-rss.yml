@@ -5,7 +5,7 @@ on:
     branches: 
       - main
   schedule:
-    - cron: "*/10 * * * *" # Run every day at midnight
+    - cron: "*/5 * * * *" # Run every day at midnight
 
 jobs:
   update-rss:
@@ -25,13 +25,17 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Run Python script
+    - name: Delete rss_feed.xml
+      run: python delete_rss_feed.py
+
+    - name: Generate rss_feed.xml
       run: python update_rss.py
     
-    - name: Commit changes
-      run: |
-        git config --local user.email "action@github.com"
-        git config --local user.name "GitHub Action"
-        git commit -am "Update RSS feed"
-        git push
+    - name: Push Changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add rss_feed.xml
+          git commit -m "Update RSS Feed"
+          git push
    
