@@ -6,9 +6,9 @@ def fetch_prayer_times():
     api_url = "http://api.aladhan.com/v1/timingsByCity"
 
     params = {
-        "city": "New York",
-        "country": "United States",
-        "method": 2,  # Calculation method
+        "city": "Dhaka",
+        "country": "Bangladesh",
+        "method": 1,  # Calculation method for Karachi University
         "date": time.strftime("%Y-%m-%d")  # Current date
     }
 
@@ -34,6 +34,19 @@ def generate_rss_feed(prayer_timings):
         title.text = prayer
 
         description = SubElement(item, "description")
+        description.text = f"Time: {time}"
+
+    return tostring(rss)
+
+while True:
+    prayer_times = fetch_prayer_times()
+    rss_feed = generate_rss_feed(prayer_times)
+
+    # Print or save the updated RSS feed
+    print(rss_feed)
+
+    # Wait for a certain interval before updating again (e.g., 24 hours)
+    time.sleep(24 * 60 * 60)
         description.text = f"Time: {time}"
 
     return tostring(rss)
