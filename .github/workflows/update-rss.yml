@@ -28,7 +28,8 @@ jobs:
     - name: Delete rss_feed.xml
       run: python delete_rss_feed.py
 
-   
+    - name: Generate rss_feed.xml
+      run: python update_rss.py
     
     - name: Push Changes
       run: |
