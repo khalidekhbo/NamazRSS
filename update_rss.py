@@ -20,7 +20,7 @@ def fetch_prayer_times():
 
     return timings
 
-def generate_rss_feed(prayer_timings):
+def generate_rss_feed(prayer_timings,last_update_time):
     rss = Element("rss", version="2.0")
     channel = SubElement(rss, "channel")
 
@@ -28,7 +28,7 @@ def generate_rss_feed(prayer_timings):
     title.text = "Namaz Time"
 
     description = SubElement(channel, "description")
-    description.text = "Stay updated with daily Namaz timings."
+    description.text = "Stay updated with daily Namaz timings.Last updated at {last_update_time} (Bangladesh Time)."
 
     for prayer, time in prayer_timings.items():
         item = SubElement(channel, "item")
@@ -46,8 +46,9 @@ if os.path.exists("rss_feed.xml"):
 
 # Fetch prayer times
 prayer_times = fetch_prayer_times()
-rss_feed = generate_rss_feed(prayer_times)
 
+current_time_bd = time.strftime("%Y-%m-%d %H:%M:%S", time.localtime(time.time() +6*3600))
+rss_feed = generate_rss_feed(prayer_times,current_time_bd)
 # Convert the bytes content to a file
 rss_feed_str = rss_feed.decode("utf-8")
 
