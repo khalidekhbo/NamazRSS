@@ -1,6 +1,11 @@
 name: Update RSS Feed
 
 on:
+release:
+    types: [published]
+  push:
+    branches: 
+      - main
   schedule:
     - cron: "* * * * *" # Run every day at midnight
 
