@@ -17,25 +17,24 @@ PRAYER_META = {
     },
     "Sunrise": {
         "emoji": "☀️",
-        "link": "https://www.aayatun.com/91/1",
+        "link": "https://sunnah.com/tirmidhi:586",
         "content": (
-            "📖 Quran: \"By the sun and its brightness...\" [Surah Ash-Shams 91:1]\n\n"
+            
             "📜 Hadith: Prophet Muhammad (ﷺ) said: \"Whoever prays Fajr in congregation then sits remembering Allah until the sun rises, then prays two rak'ahs, will have a reward like that of Hajj and 'Umrah.\" [Jami' at-Tirmidhi 586]"
         )
     },
     "Dhuhr": {
         "emoji": "🌤️",
-        "link": "https://www.aayatun.com/17/78",
+        "link": "https://sunnah.com/tirmidhi:161"",
         "content": (
-            "📖 Quran: \"Perform As-Salah from mid-day till the darkness of the night.\" [Surah Al-Isra 17:78]\n\n"
+            
             "📜 Hadith: Prophet Muhammad (ﷺ) said: \"This is an hour in which the gates of the heavens are opened, and I like that a righteous deed of mine ascends during it.\" [Jami' at-Tirmidhi 161]"
         )
     },
     "Asr": {
         "emoji": "🛕",
-        "link": "https://www.aayatun.com/2/238",
+        "link": "hhttps://sunnah.com/bukhari:574",
         "content": (
-            "📖 Quran: \"Guard strictly your (habitual) prayers, especially the Middle Prayer (Asr).\" [Surah Al-Baqarah 2:238]\n\n"
             "📜 Hadith: Prophet Muhammad (ﷺ) said: \"Whoever prays the two cool prayers (Fajr and 'Asr) will enter Paradise.\" [Sahih al-Bukhari 574]"
         )
     },
@@ -48,17 +47,17 @@ PRAYER_META = {
     },
     "Maghrib": {
         "emoji": "🌆",
-        "link": "https://www.aayatun.com/2/187",
+        "link": "https://sunnah.com/abudawud:418",
         "content": (
-            "📖 Quran: \"...then complete the fast until the night [i.e., sunset].\" [Surah Al-Baqarah 2:187]\n\n"
+            
             "📜 Hadith: Prophet Muhammad (ﷺ) said: \"My Ummah will continue to be upon goodness so long as they do not delay Maghrib until the stars intertwine.\" [Sunan Abi Dawud 418]"
         )
     },
     "Isha": {
         "emoji": "🌙",
-        "link": "https://www.aayatun.com/24/58",
+        "link": "https://sunnah.com/bukhari:615",
         "content": (
-            "📖 Quran: \"...and after the Isha prayer...\" [Surah An-Nur 24:58]\n\n"
+           
             "📜 Hadith: Prophet Muhammad (ﷺ) said: \"If people knew what reward there is in the Isha and Fajr prayers, they would come to them even if they had to crawl.\" [Sahih al-Bukhari 615]"
         )
     },
@@ -124,7 +123,7 @@ def generate_simple_rss(prayer_timings, last_update_time):
     channel = SubElement(rss, "channel")
 
     title = SubElement(channel, "title")
-    title.text = "Namaz Times (Simple)"
+    title.text = "Namaz Times"
 
     link = SubElement(channel, "link")
     link.text = BASE_SITE
@@ -139,13 +138,13 @@ def generate_simple_rss(prayer_timings, last_update_time):
         item = SubElement(channel, "item")
         
         item_title = SubElement(item, "title")
-        item_title.text = f"{prayer}: {time_12h}"
+        item_title.text = f"{prayer}"
 
         item_link = SubElement(item, "link")
         item_link.text = meta["link"]
 
         item_desc = SubElement(item, "description")
-        item_desc.text = f"{prayer} prayer time is {time_12h}."
+        item_desc.text = f" Time : {time_12h}."
 
         item_guid = SubElement(item, "guid")
         item_guid.text = f"simple-namaz-{prayer.lower()}-{time.strftime('%Y-%m-%d')}"
@@ -158,13 +157,13 @@ def generate_modern_rss(prayer_timings, last_update_time):
     channel = SubElement(rss, "channel")
 
     title = SubElement(channel, "title")
-    title.text = "🕌 Namaz Times & Quran/Hadith"
+    title.text = "🕌 Namaz Times"
 
     link = SubElement(channel, "link")
     link.text = BASE_SITE
 
     description = SubElement(channel, "description")
-    description.text = f"Daily prayer schedule with Quran & Hadith references. Updated: {last_update_time}"
+    description.text = f"Daily prayer schedule. Updated: {last_update_time}"
 
     # Overview Widget Card
     summary_item = SubElement(channel, "item")
