@@ -32,8 +32,8 @@ PRAYER_META = {
         )
     },
     "Asr": {
-        "emoji": "🛕",
-        "link": "hhttps://sunnah.com/bukhari:574",
+        "emoji": "⛅",
+        "link": "https://sunnah.com/bukhari:574",
         "content": (
             "📜 Hadith: Prophet Muhammad (ﷺ) said: \"Whoever prays the two cool prayers (Fajr and 'Asr) will enter Paradise.\" [Sahih al-Bukhari 574]"
         )
