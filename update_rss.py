@@ -25,7 +25,7 @@ PRAYER_META = {
     },
     "Dhuhr": {
         "emoji": "🌤️",
-        "link": "https://sunnah.com/tirmidhi:161"",
+        "link": "https://sunnah.com/tirmidhi:161",
         "content": (
             
             "📜 Hadith: Prophet Muhammad (ﷺ) said: \"This is an hour in which the gates of the heavens are opened, and I like that a righteous deed of mine ascends during it.\" [Jami' at-Tirmidhi 161]"
