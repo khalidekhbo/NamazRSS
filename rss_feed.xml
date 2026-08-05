@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <rss version="2.0">
   <channel>
-    <title>🕌 Namaz Times &amp; Quran/Hadith</title>
+    <title>🕌 Namaz Times</title>
     <link>https://www.aayatun.com/</link>
-    <description>Daily prayer schedule with Quran &amp; Hadith references. Updated: 2026-08-05 06:57:12 PM</description>
+    <description>Daily prayer schedule. Updated: 2026-08-05 07:16:23 PM</description>
     <item>
       <title>📅 Today's Timetable (Aug 05, 2026)</title>
       <description>🌅 Fajr     • 04:08 AM
@@ -23,26 +23,20 @@
     </item>
     <item>
       <title>☀️ Sunrise — 05:30 AM</title>
-      <link>https://www.aayatun.com/91/1</link>
-      <description>📖 Quran: "By the sun and its brightness..." [Surah Ash-Shams 91:1]
-
-📜 Hadith: Prophet Muhammad (ﷺ) said: "Whoever prays Fajr in congregation then sits remembering Allah until the sun rises, then prays two rak'ahs, will have a reward like that of Hajj and 'Umrah." [Jami' at-Tirmidhi 586]</description>
+      <link>https://sunnah.com/tirmidhi:586</link>
+      <description>📜 Hadith: Prophet Muhammad (ﷺ) said: "Whoever prays Fajr in congregation then sits remembering Allah until the sun rises, then prays two rak'ahs, will have a reward like that of Hajj and 'Umrah." [Jami' at-Tirmidhi 586]</description>
       <guid>modern-namaz-sunrise-2026-08-05</guid>
     </item>
     <item>
       <title>🌤️ Dhuhr — 12:04 PM</title>
-      <link>https://www.aayatun.com/17/78</link>
-      <description>📖 Quran: "Perform As-Salah from mid-day till the darkness of the night." [Surah Al-Isra 17:78]
-
-📜 Hadith: Prophet Muhammad (ﷺ) said: "This is an hour in which the gates of the heavens are opened, and I like that a righteous deed of mine ascends during it." [Jami' at-Tirmidhi 161]</description>
+      <link>https://sunnah.com/tirmidhi:161</link>
+      <description>📜 Hadith: Prophet Muhammad (ﷺ) said: "This is an hour in which the gates of the heavens are opened, and I like that a righteous deed of mine ascends during it." [Jami' at-Tirmidhi 161]</description>
       <guid>modern-namaz-dhuhr-2026-08-05</guid>
     </item>
     <item>
       <title>🛕 Asr — 03:30 PM</title>
-      <link>https://www.aayatun.com/2/238</link>
-      <description>📖 Quran: "Guard strictly your (habitual) prayers, especially the Middle Prayer (Asr)." [Surah Al-Baqarah 2:238]
-
-📜 Hadith: Prophet Muhammad (ﷺ) said: "Whoever prays the two cool prayers (Fajr and 'Asr) will enter Paradise." [Sahih al-Bukhari 574]</description>
+      <link>hhttps://sunnah.com/bukhari:574</link>
+      <description>📜 Hadith: Prophet Muhammad (ﷺ) said: "Whoever prays the two cool prayers (Fajr and 'Asr) will enter Paradise." [Sahih al-Bukhari 574]</description>
       <guid>modern-namaz-asr-2026-08-05</guid>
     </item>
     <item>
@@ -53,18 +47,14 @@
     </item>
     <item>
       <title>🌆 Maghrib — 06:38 PM</title>
-      <link>https://www.aayatun.com/2/187</link>
-      <description>📖 Quran: "...then complete the fast until the night [i.e., sunset]." [Surah Al-Baqarah 2:187]
-
-📜 Hadith: Prophet Muhammad (ﷺ) said: "My Ummah will continue to be upon goodness so long as they do not delay Maghrib until the stars intertwine." [Sunan Abi Dawud 418]</description>
+      <link>https://sunnah.com/abudawud:418</link>
+      <description>📜 Hadith: Prophet Muhammad (ﷺ) said: "My Ummah will continue to be upon goodness so long as they do not delay Maghrib until the stars intertwine." [Sunan Abi Dawud 418]</description>
       <guid>modern-namaz-maghrib-2026-08-05</guid>
     </item>
     <item>
       <title>🌙 Isha — 08:00 PM</title>
-      <link>https://www.aayatun.com/24/58</link>
-      <description>📖 Quran: "...and after the Isha prayer..." [Surah An-Nur 24:58]
-
-📜 Hadith: Prophet Muhammad (ﷺ) said: "If people knew what reward there is in the Isha and Fajr prayers, they would come to them even if they had to crawl." [Sahih al-Bukhari 615]</description>
+      <link>https://sunnah.com/bukhari:615</link>
+      <description>📜 Hadith: Prophet Muhammad (ﷺ) said: "If people knew what reward there is in the Isha and Fajr prayers, they would come to them even if they had to crawl." [Sahih al-Bukhari 615]</description>
       <guid>modern-namaz-isha-2026-08-05</guid>
     </item>
     <item>
