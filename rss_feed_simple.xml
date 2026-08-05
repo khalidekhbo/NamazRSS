@@ -1,0 +1,74 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+  <channel>
+    <title>Namaz Times (Simple)</title>
+    <link>https://www.aayatun.com/</link>
+    <description>Daily Namaz timings for Dhaka. Updated: 2026-08-05 06:57:12 PM</description>
+    <item>
+      <title>Fajr: 04:08 AM</title>
+      <link>https://www.aayatun.com/11/114</link>
+      <description>Fajr prayer time is 04:08 AM.</description>
+      <guid>simple-namaz-fajr-2026-08-05</guid>
+    </item>
+    <item>
+      <title>Sunrise: 05:30 AM</title>
+      <link>https://www.aayatun.com/91/1</link>
+      <description>Sunrise prayer time is 05:30 AM.</description>
+      <guid>simple-namaz-sunrise-2026-08-05</guid>
+    </item>
+    <item>
+      <title>Dhuhr: 12:04 PM</title>
+      <link>https://www.aayatun.com/17/78</link>
+      <description>Dhuhr prayer time is 12:04 PM.</description>
+      <guid>simple-namaz-dhuhr-2026-08-05</guid>
+    </item>
+    <item>
+      <title>Asr: 03:30 PM</title>
+      <link>https://www.aayatun.com/2/238</link>
+      <description>Asr prayer time is 03:30 PM.</description>
+      <guid>simple-namaz-asr-2026-08-05</guid>
+    </item>
+    <item>
+      <title>Sunset: 06:38 PM</title>
+      <link>https://www.aayatun.com/50/39</link>
+      <description>Sunset prayer time is 06:38 PM.</description>
+      <guid>simple-namaz-sunset-2026-08-05</guid>
+    </item>
+    <item>
+      <title>Maghrib: 06:38 PM</title>
+      <link>https://www.aayatun.com/2/187</link>
+      <description>Maghrib prayer time is 06:38 PM.</description>
+      <guid>simple-namaz-maghrib-2026-08-05</guid>
+    </item>
+    <item>
+      <title>Isha: 08:00 PM</title>
+      <link>https://www.aayatun.com/24/58</link>
+      <description>Isha prayer time is 08:00 PM.</description>
+      <guid>simple-namaz-isha-2026-08-05</guid>
+    </item>
+    <item>
+      <title>Imsak: 03:58 AM</title>
+      <link>https://www.aayatun.com/2/187</link>
+      <description>Imsak prayer time is 03:58 AM.</description>
+      <guid>simple-namaz-imsak-2026-08-05</guid>
+    </item>
+    <item>
+      <title>Midnight: 12:04 AM</title>
+      <link>https://www.aayatun.com/73/2</link>
+      <description>Midnight prayer time is 12:04 AM.</description>
+      <guid>simple-namaz-midnight-2026-08-05</guid>
+    </item>
+    <item>
+      <title>Firstthird: 10:16 PM</title>
+      <link>https://www.aayatun.com/17/79</link>
+      <description>Firstthird prayer time is 10:16 PM.</description>
+      <guid>simple-namaz-firstthird-2026-08-05</guid>
+    </item>
+    <item>
+      <title>Lastthird: 01:53 AM</title>
+      <link>https://www.aayatun.com/51/18</link>
+      <description>Lastthird prayer time is 01:53 AM.</description>
+      <guid>simple-namaz-lastthird-2026-08-05</guid>
+    </item>
+  </channel>
+</rss>
