@@ -36,8 +36,8 @@ Your personalized prayer time RSS feed is now ready to use.
 
 ## Role of AI
 
-👉 The base code was written by ChatGPT 3.5. 
-👉 The updated code was written by Gemini 3.6 Flash.
+1. The base code was written by ChatGPT 3.5. 
+2. The updated code was written by Gemini 3.6 Flash.
 
 ## Contributing
 
