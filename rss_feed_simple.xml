@@ -3,7 +3,7 @@
   <channel>
     <title>Namaz Times</title>
     <link>https://www.aayatun.com/</link>
-    <description>Daily Namaz timings for Dhaka. Updated: 2026-11-17 10:32:09 AM</description>
+    <description>Daily Namaz timings for Dhaka. Updated: 2026-11-17 07:17:38 PM</description>
     <item>
       <title>Fajr</title>
       <link>https://www.aayatun.com/11/114</link>
@@ -13,19 +13,19 @@
     <item>
       <title>Sunrise</title>
       <link>https://sunnah.com/tirmidhi:586</link>
-      <description> Time : 06:14 AM.</description>
+      <description> Time : 06:15 AM.</description>
       <guid>simple-namaz-sunrise-2026-11-17</guid>
     </item>
     <item>
       <title>Dhuhr</title>
       <link>https://sunnah.com/tirmidhi:161</link>
-      <description> Time : 11:43 AM.</description>
+      <description> Time : 11:44 AM.</description>
       <guid>simple-namaz-dhuhr-2026-11-17</guid>
     </item>
     <item>
       <title>Asr</title>
       <link>https://sunnah.com/bukhari:574</link>
-      <description> Time : 02:52 PM.</description>
+      <description> Time : 02:51 PM.</description>
       <guid>simple-namaz-asr-2026-11-17</guid>
     </item>
     <item>
@@ -67,7 +67,7 @@
     <item>
       <title>Lastthird</title>
       <link>https://www.aayatun.com/51/18</link>
-      <description> Time : 01:53 AM.</description>
+      <description> Time : 01:54 AM.</description>
       <guid>simple-namaz-lastthird-2026-11-17</guid>
     </item>
   </channel>
